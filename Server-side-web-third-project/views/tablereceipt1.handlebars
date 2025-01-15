@@ -1,0 +1,22 @@
+
+<h2>Thank you for your order of {{order.title}}</h2>
+
+<img src="/images/{{order.image}}" alt="{{order.title}}" style="max-width: 150px; max-height: 200px;">
+
+<br></br>
+
+
+<table border = "1">
+    <tr>
+        <td>Number of copies</td>
+        <td>{{order.copies}}</td>
+    </tr>    
+    <tr>
+        <td>Price</td>
+        <td>${{order.price}}</td>
+    </tr>
+    <tr>
+        <td>Total Cost (with tax)</td>
+        <td>${{order.total}}</td>
+    </tr>
+</table>

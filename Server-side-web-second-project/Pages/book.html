@@ -1,0 +1,47 @@
+<html>
+    <body>
+        <h2>
+            Books by Ernest Hemingway
+        </h2>
+        <form action="http://localhost:3000/order" method="get">
+        
+        Name on the order:
+        <input type="text" name="customer"></input>
+        <br>
+
+        Select a Book: 
+        <select name="books">
+            <option value="0">
+                Select a book
+            </option>
+
+            <option value="978-0486853642">
+                A farewell to arms (Dover Thrift Editions)  ($12)
+            </option>
+
+            <option value="978-0063297494">
+                Big two-hearted river  ($16.69)
+            </option>
+
+            <option value="978-1416591313">
+                A Moveable Feast: The Restored Edition  ($12)
+            </option>
+
+        </select>
+        <br>
+        
+        Copies:
+        <input type="text" name="copies" value="0"></input>
+        <br>
+
+        
+
+        <input type="submit" name="submit" value="Purchase"></input>
+
+    </form>
+
+    <p>
+        <i>Copyright Raya Jahan</i> &copy;&#9786;
+    </p>
+    </body>
+</html>
