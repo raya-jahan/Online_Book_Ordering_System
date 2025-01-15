@@ -1,0 +1,16 @@
+{
+  "name": "server-side-web-first-project",
+  "version": "1.0.0",
+  "description": "Online book ordering website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "raya jahan",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.0",
+    "nodemon": "^3.1.7",
+    "path": "^0.12.7"
+  }
+}

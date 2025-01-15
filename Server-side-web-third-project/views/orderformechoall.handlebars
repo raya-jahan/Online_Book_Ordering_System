@@ -1,0 +1,32 @@
+        
+                <h3>Ernest Hemingway Books Order Form</h3>
+        <form action="http://localhost:3000/order" method="get">
+            Name on order: <input type = "text" name = "customer" value = '{{previous.customer}}'/>
+            {{#if errors.CustomerMissing}}<i>Please give a name</i>{{/if}}
+            <br/>
+            Copies: <input type = "text" name = "copies" value = '{{previous.copies}}'/>
+            {{#if errors.CopiesIllegal}}<i>Number of copies must be a whole number at least 1</i>{{/if}}
+            <br/>
+
+            Book: 
+            <select name = "books">
+                <option value = "0">Select a Book</option>
+                {{#each previous.book}}
+                    
+                    <option value={{ISBN}} {{selected}}>{{title}} (${{price}})</option>
+                {{/each}}
+            </select>
+            {{#if errors.BookMissing}}<i>Please select a book</i>{{/if}}
+            <br/>
+            
+            <br/>
+            
+            <input type = "submit" name="submit" value = "Place Order"/>
+        </form>
+        
+    
+        
+
+        
+        
+    
